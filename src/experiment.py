@@ -6,9 +6,9 @@ from models.model import SAED
 if __name__=="__main__":
     # 0. Setting up the results folders
     EXPERIMENT_NAME = 'saed_model_evaluation'
-    RESULTS_PATH = '/saed_model_evaluation'
+    RESULTS_PATH = '/home/guestuser/model_evaluation' # Please keep this parameter as it is for docker or change the Dockerfile
     DATA_PATH = '/dataset/ukdale.h5'
-    MAX_EPOCHS  = 10
+    MAX_EPOCHS  = 1
     # 1. Choosing a pre-configrued template
     template = ExperimentTemplate( data_path=DATA_PATH,
                  template_name='ukdale',
@@ -25,16 +25,17 @@ if __name__=="__main__":
         "model_name": 'SAED',
         'attention_type': 'dot',
         'backend': 'pytorch',
-        'in_size': 480,
+        'in_size': 151,
         'out_size': 1,
         'custom_preprocess': None,
         'feature_type': 'mains',
         'input_norm': 'z-norm',
         'target_norm': 'z-norm',
         'seq_type': 'seq2point',
+        'stride':1,
         'point_position': 'mid_position',
         'learning_rate': 10e-5,
-        'max_nb_epochs': 11
+        'max_nb_epochs': MAX_EPOCHS
     })
 
     # 3. Extending the experiment
@@ -45,6 +46,3 @@ if __name__=="__main__":
     template.run_template(EXPERIMENT_NAME,
                           RESULTS_PATH,
                           f'{RESULTS_PATH}/mlflow/mlruns')
-
-
-

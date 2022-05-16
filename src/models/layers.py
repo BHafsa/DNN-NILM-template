@@ -3,7 +3,8 @@
 Example Layers required by the models
 """
 
-import  torch.nn as nn
+import torch
+import torch.nn as nn
 
 class Attention(nn.Module):
     """ Applies attention mechanism on the `context` using the `query`.

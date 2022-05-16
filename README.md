@@ -20,17 +20,12 @@ the experimental setup. It has the following structure:
 3. **data**: This repository is expected to contain the NILM datasets 
 , in the hdf5 format, that will be used during the experimental setup. 
 
-## Execution
-
+## How to run ?
 ```
 docker build -t experiment_setup .
+docker run --gpus 'all' --name exp_exec experiment_setup
+cp exp_exec:/home/guestuser/model_evaluation ./results
 ```
-
-
-```
-docker run -c $(PWD)/namefolder:/namefolder --name experiment_exec experiment_setup
-```
-
 
 ##Authors
 
