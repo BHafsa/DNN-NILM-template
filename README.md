@@ -24,7 +24,7 @@ the experimental setup. It has the following structure:
 ```
 docker build -t experiment_setup .
 docker run --gpus 'all' --name exp_exec experiment_setup
-cp exp_exec:/home/guestuser/model_evaluation ./results
+docker cp exp_exec:/home/guestuser/model_evaluation ./results
 ```
 
 ##Authors
