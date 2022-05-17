@@ -27,11 +27,11 @@ docker run --gpus 'all' --name exp_exec experiment_setup
 docker cp exp_exec:/home/guestuser/model_evaluation ./results
 ```
 
-##Authors
+## Authors
 
 **Hafsa Bousbiat**, email: [hafsa.bousbiat@gmail.com](hafsa.bousbiat@gmail.com)
 
-##Copyright and license
+## Copyright and license
 Code released under the [MIT Licence](https://github.com/BHafsa/DNN-NILM-experiment/blob/main/LICENSE). 
 
 ****
