@@ -14,11 +14,10 @@ and benefiting from the
 of the experiment.
 2. **src**: This folder is expected to contain the source code for 
 the experimental setup. It has the following structure:
-  - **model**: A folder containing the models code.
+  - **model**: A folder containing the code of the model.
   - **data**: A containing python scripts for data pre-processing, data loaders and data post-processing.
   - **experiment.py**: A python script setting up the code for the experiment.
-3. **data**: This repository is expected to contain the NILM datasets 
-, in the hdf5 format, that will be used during the experimental setup. 
+3. **data**: This repository is expected to contain the NILM datasets, in the hdf5 format, that will be used during the experimental setup. 
 
 ## How to run ?
 ```
