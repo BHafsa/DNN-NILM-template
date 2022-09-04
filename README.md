@@ -5,7 +5,7 @@ The project is compatible with the latest version of NILMtk as well as
 the deep-nilmtk. It is aimed to offer a more inclusive environment/toolkit
 that can be used by PyTorch community as well as the Tensorflow community. 
 The goal is to decouple the NILM development from the deep learning 
-framework as well the 
+framework as well to improve the efficiency of research.
 
 ## The structure of the template
 The  repository suggests a pre-configured project for experimenting with deep-nilmtk
@@ -27,7 +27,7 @@ docker run --gpus 'all' --name exp_exec experiment_setup
 docker cp exp_exec:/home/guestuser/model_evaluation ./results
 ```
 
-## Authors
+## Author
 
 **Hafsa Bousbiat**, email: [hafsa.bousbiat@gmail.com](hafsa.bousbiat@gmail.com)
 
